@@ -1,0 +1,16 @@
+.producto {
+    margin-top: 4rem;
+}
+
+.producto > h1 {
+    font-size: 3rem;
+    margin: 2rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .producto > h1 {
+        font-size: 2rem;
+    }
+    
+}

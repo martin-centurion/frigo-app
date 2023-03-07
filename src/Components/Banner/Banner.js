@@ -5,7 +5,7 @@ import { BsArrowRight } from 'react-icons/bs';
 function Banner() {
   return (
     <div className='banner'>
-        <div className='banner__content'>
+        <div className='banner__content container'>
             <div className='banner__content-img'>
                 <img src='./img/tomahawk.png' alt='Tomahawk'/>
             </div>

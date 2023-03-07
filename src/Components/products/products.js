@@ -1,7 +1,7 @@
 const products = [
     {
         id: 1,
-        img: "/img/tomahawk.png",
+        img: "/img/tomahawk-300.png",
         title: "Tomahawk",
         description: "El tomahawk es un corte tradicional americano. Es ideal para hacer a la parrilla.",
         price: 1990,
@@ -9,7 +9,7 @@ const products = [
     },
     {
         id: 2,
-        img: "/img/pechito-de-cerdo.png",
+        img: "/img/pechito-de-cerdo-300.png",
         title: "Pechito de Cerdo",
         description: "El pechito son ideales para hacer a la parrilla o al horno con una receta gourmet.",
         price: 990,
@@ -17,13 +17,13 @@ const products = [
     },
     {
         id: 3,
-        img: "/img/pollo.png",
+        img: "/img/pollo-300.png",
         title: "Pollo",
         description: "Uno de los productos que se puede hacer de diferentes maneras, al horno, parrilla o a la cacerola para guiso o estofado.",
         price: 600,
         category: "ave",
-    },
-    {
+    }
+    /* {
         id: 4,
         img: "/img/tapa-asado.png",
         title: "Tapa de Asado",
@@ -31,7 +31,7 @@ const products = [
         price: 1450,
         category: "ternera",
     }
-    
+     */
 ]
 
 export default products;

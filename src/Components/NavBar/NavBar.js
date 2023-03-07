@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
-import Logo from '../Logo/Logo';
 import './styles.css';
 import { BsListNested, BsXLg, BsBag } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 function NavBar() {
 
@@ -14,16 +14,25 @@ function NavBar() {
         <div className='header'>
             <div className='header__content container'>
                 <div className='header__content-logo'>
-                    <Logo />
+                    <Link to="/">
+                        <img src="./img/logo-app-60.png" alt="Logo App" />
+                    </Link> 
                 </div>
                 <div className='header__content-menu'>
 
                     <nav ref={ navRef }>
-
-                        <button>Home</button>
-                        <button>Productos</button>
-                        <button>Nosotros</button>
-                        <button>Contacto</button>
+                        <Link to="/">
+                            <button>Home</button>
+                        </Link>
+                        <Link to="/category/ternera">
+                            <button>Ternera</button>
+                        </Link>
+                        <Link to="/category/cerdo">
+                            <button>Cerdo</button>
+                        </Link>
+                        <Link to="/category/ave">
+                            <button>Ave</button>
+                        </Link>
                         <button>
                             <BsBag />
                         </button>
