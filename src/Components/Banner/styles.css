@@ -1,0 +1,51 @@
+.banner {
+    background-color: var(--black);
+}
+
+.banner__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.banner__content-title {
+    color: var(--white);
+}
+
+.banner__content-title h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.banner__content-title button {
+    font-size: .75rem;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-top: 2rem;
+    border: 2px solid var(--white);
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+}
+
+.banner__content-title button:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+@media screen and (max-width: 425px) {
+    .banner__content {
+        flex-direction: column;
+    }
+
+    .banner__content img {
+        width: 300px;
+    }
+    
+    .banner__content-title h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
