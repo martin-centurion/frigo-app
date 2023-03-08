@@ -35,19 +35,15 @@ function NavBar() {
                         </Link>
                         <button className='cart-widget'>
                             <BsBag className='icon'/>
-                            <span className='badge'>2</span>
+                            <span className='cont'>2</span>
                         </button>
-                            
-
-
-
-
                         <button 
                             className='nav-btn nav-close-btn' 
                             onClick={ showNavBar }>
                             <BsXLg />
                         </button>
                     </nav>
+                    
                     <div className='cart'>
                         <button 
                             className='nav-btn' 

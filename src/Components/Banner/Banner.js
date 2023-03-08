@@ -13,7 +13,7 @@ function Banner() {
             <div className='banner__content-title'>
                 <h1>Tomahawk</h1>
                 <p>El tomahawk es un corte tradicional americano. Es ideal para hacer a la parrilla.</p>
-                <Link to="/producto/1">
+                <Link to='/producto/1'>
                      <button>
                         Ver más 
                       <BsArrowRight />

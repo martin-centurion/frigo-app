@@ -1,7 +1,7 @@
-import "./styles.css";
+import './styles.css';
 import { useState, useEffect } from "react";
 import products from '../products/products';
-import ItemList from "../ItemList/ItemList";
+import ItemList from '../ItemList/ItemList';
 import { useParams } from "react-router-dom";
 
 function getItemsFromDatabase() {
@@ -47,7 +47,7 @@ function ItemListContainer() {
     }, [idCategory]);
 
     return (
-        <div className="producto container">
+        <div className='producto container'>
             <h1>Productos</h1>
             <ItemList users = { users } />
         </div>

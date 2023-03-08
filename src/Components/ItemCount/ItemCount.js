@@ -1,5 +1,5 @@
-import { useState } from "react";
-import ButtonVerMas from "../Button/ButtonVerMas";
+import { useState } from 'react';
+import ButtonVerMas from '../Button/ButtonVerMas';
 import './styles.css';
 
 const ItemCount = ({ initial, stock, onAddToCart }) => {
@@ -18,18 +18,18 @@ const ItemCount = ({ initial, stock, onAddToCart }) => {
   };
 
   return (
-    <div className="bot">
+    <div className='bot'>
 
-        <div className="bot__content">
+        <div className='bot__content'>
         <ButtonVerMas onTouchButton={decrease} >
             -
         </ButtonVerMas>
-        <span className="contador"> {count} </span>
+        <span className='contador'> {count} </span>
         <ButtonVerMas onTouchButton={increase} >
             +
         </ButtonVerMas>
 
-        <button className="bot_add" onClick={() => onAddToCart(count)}>Comprar</button>
+        <button className='bot_add' onClick={() => onAddToCart(count)}>Comprar</button>
         </div>
 
     </div>

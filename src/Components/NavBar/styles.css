@@ -16,21 +16,18 @@
     
 }
 
-
 .cart-widget {
     padding: 5px 10px;
     position: relative;
     display: inline-block;
-
-    
   }
 
-  .icon {
+.icon {
     font-size: 1.2rem;
     color: var(--white);
   }
 
-  .badge {
+.cont {
     position: absolute;
     top: -5px;
     right: -15px;

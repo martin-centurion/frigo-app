@@ -31,16 +31,16 @@ function ItemDetailContainer() {
       }
 
     return (
-        <div className="producto container">
-        <div className="producto__content">
-                <div className="producto__content-img" key={user.id}>
+        <div className='producto container'>
+        <div className='producto__content'>
+                <div className='producto__content-img' key={user.id}>
                     <img src={user.img} alt={user.title} />
-                    <div className="producto__content-title">
+                    <div className='producto__content-title'>
                         <h1>{user.title}</h1>
                     </div>
                     <h4>{user.description}</h4>
                     <p>$ {user.price}</p>
-                    <p className="stock">Stock Disponible: {user.stock}u</p>
+                    <p className='stock'>Stock Disponible: {user.stock}u</p>
                     
                         <ItemCount
                              onAddToCart={onAddToCart}
