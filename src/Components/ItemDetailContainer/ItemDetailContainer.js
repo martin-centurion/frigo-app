@@ -23,7 +23,7 @@ function ItemDetailContainer() {
         getSingleItemFromDatabase(idUser).then((respuesta) => {
             setUsers(respuesta);
         });
-    }, []);
+    }, [idUser]);
 
 
     function onAddToCart(count) {

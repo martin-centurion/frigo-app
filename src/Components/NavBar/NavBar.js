@@ -33,9 +33,15 @@ function NavBar() {
                         <Link to="/category/ave">
                             <button>Ave</button>
                         </Link>
-                        <button>
-                            <BsBag />
+                        <button className='cart-widget'>
+                            <BsBag className='icon'/>
+                            <span className='badge'>2</span>
                         </button>
+                            
+
+
+
+
                         <button 
                             className='nav-btn nav-close-btn' 
                             onClick={ showNavBar }>
@@ -47,10 +53,6 @@ function NavBar() {
                             className='nav-btn' 
                             onClick={ showNavBar }>
                             <BsListNested />
-                        </button>
-                        <button 
-                            className='nav-btn'>
-                            <BsBag />
                         </button>
                     </div>  
                 </div>
