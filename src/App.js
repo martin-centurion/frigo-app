@@ -8,9 +8,7 @@ import NavBar from './Components/NavBar/NavBar';
 function App() {
   return (
     <div>
-
       
-
     <BrowserRouter>
           <NavBar />
           <Banner />
@@ -23,7 +21,7 @@ function App() {
             
             <Route 
               path='/producto/:idUser'
-              element= {<ItemDetailContainer /> }
+              element= { <ItemDetailContainer /> }
             />
 
             <Route 

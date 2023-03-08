@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles.css';
 import { BsArrowRight } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 function Banner() {
   return (
@@ -12,7 +13,12 @@ function Banner() {
             <div className='banner__content-title'>
                 <h1>Tomahawk</h1>
                 <p>El tomahawk es un corte tradicional americano. Es ideal para hacer a la parrilla.</p>
-                <button>Ver más <BsArrowRight /></button>
+                <Link to="/producto/1">
+                     <button>
+                        Ver más 
+                      <BsArrowRight />
+                      </button>
+                </Link>
             </div>
         </div>
     </div>

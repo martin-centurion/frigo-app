@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ButtonVerMas from "../Button/ButtonVerMas";
 import './styles.css';
 function ItemList ( { users }) {
     return (
@@ -11,7 +12,9 @@ function ItemList ( { users }) {
                         <h1>{user.title}</h1>
                     </div>
                     <Link to={`/producto/${user.id}`}>
-                            <button>Ver más</button>
+                            <ButtonVerMas>
+                                Ver más
+                            </ButtonVerMas>
                     </Link>
                 </div>
             ))}

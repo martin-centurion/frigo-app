@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
+import ItemCount from "../ItemCount/ItemCount";
 import products from "../products/products";
 
 function getSingleItemFromDatabase(idItem) {
@@ -24,8 +25,13 @@ function ItemDetailContainer() {
         });
     }, []);
 
+
+    function onAddToCart(count) {
+        alert(`Agregaste ${count} items al carrito`);
+      }
+
     return (
-        <div className="producto">
+        <div className="producto container">
         <div className="producto__content">
                 <div className="producto__content-img" key={user.id}>
                     <img src={user.img} alt={user.title} />
@@ -34,7 +40,14 @@ function ItemDetailContainer() {
                     </div>
                     <h4>{user.description}</h4>
                     <p>$ {user.price}</p>
-                    <button>Agregar al Carrito</button>
+                    <p className="stock">Stock Disponible: {user.stock}u</p>
+                    
+                        <ItemCount
+                             onAddToCart={onAddToCart}
+                             initial={1}
+                             stock={user.stock}
+                        />
+        
                 </div>
         </div>
         </div>
