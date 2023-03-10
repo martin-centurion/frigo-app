@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
 import './styles.css';
-import { BsListNested, BsXLg, BsBag } from 'react-icons/bs';
+import { BsListNested, BsXLg } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import CartWidget from '../CartWidget/CartWidget';
 
 function NavBar() {
 
@@ -30,13 +31,15 @@ function NavBar() {
                         <Link to="/category/cerdo">
                             <button>Cerdo</button>
                         </Link>
+                        <Link to="/category/achura">
+                            <button>Achuras</button>
+                        </Link>
+
                         <Link to="/category/ave">
                             <button>Ave</button>
                         </Link>
-                        <button className='cart-widget'>
-                            <BsBag className='icon'/>
-                            <span className='cont'>2</span>
-                        </button>
+                            <CartWidget />
+
                         <button 
                             className='nav-btn nav-close-btn' 
                             onClick={ showNavBar }>

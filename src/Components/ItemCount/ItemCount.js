@@ -21,15 +21,19 @@ const ItemCount = ({ initial, stock, onAddToCart }) => {
     <div className='bot'>
 
         <div className='bot__content'>
-        <ButtonVerMas onTouchButton={decrease} >
-            -
-        </ButtonVerMas>
-        <span className='contador'> {count} </span>
-        <ButtonVerMas onTouchButton={increase} >
-            +
-        </ButtonVerMas>
-
-        <button className='bot_add' onClick={() => onAddToCart(count)}>Comprar</button>
+          <div className='bot__content-contador'>
+                <ButtonVerMas onTouchButton={decrease} >
+                    -
+                </ButtonVerMas>
+                <span className='contador'> {count} </span>
+                <ButtonVerMas onTouchButton={increase} >
+                    +
+                </ButtonVerMas>
+          </div>
+          <div className='bot__content-bot'>
+              <button className='bot_add' onClick={() => onAddToCart(count)}>Comprar</button>
+          </div>
+            
         </div>
 
     </div>

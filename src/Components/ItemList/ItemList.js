@@ -10,6 +10,7 @@ function ItemList ( { users }) {
                     <img src={user.img} alt={user.title} />
                     <div className='producto__content-title'>
                         <h1>{user.title}</h1>
+                        <p>{user.category}</p>
                     </div>
                     <Link to={`/producto/${user.id}`}>
                             <ButtonVerMas>

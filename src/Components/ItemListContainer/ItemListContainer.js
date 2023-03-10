@@ -11,7 +11,7 @@ function getItemsFromDatabase() {
         setTimeout(() => {
             if (error === true) reject ("Error leyendo datos");
             resolve(products);
-        }, 3000)
+        }, 1000)
     });
 }
 
@@ -21,7 +21,7 @@ function getItemsByCategoryFromDatabase(categoryURL) {
             let productsFiltered = products.filter(
                 (item) => item.category === categoryURL);
                 resolve(productsFiltered);
-        }, 3000)
+        }, 1000)
     });
 }
 

@@ -7,8 +7,15 @@
 }
 
 .producto__content-title > h1 {
-    font-size: 1.5rem;
-    margin: .45rem 0;
+    font-size: 1.2rem;
+    margin: .3rem 0;
+}
+
+.producto__content-title > p {
+    font-size: .8rem;
+    text-transform: uppercase;
+    color: var(--grey);
+    margin-bottom: .45rem;
 }
 
 .producto__content-img > h4 {

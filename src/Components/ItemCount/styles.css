@@ -1,21 +1,42 @@
 .bot {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding-top: 2rem;
 }
 
 .bot__content {
-    width: 200px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    align-items: baseline;
 }
 
-.bot__content > span {
-    margin: 1rem;
+.bot__content-contador {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
 }
 
-.bot__content > button {
+.bot__content-contador > span {
+    background: transparent;
     margin-left: 1rem;
+    font-size: 1rem;
+}
+
+.bot__content-bot > button {
+    margin-left: 1rem;
+}
+
+@media screen and (max-width: 425px) {
+
+    .bot {
+        padding-top: 0;
+    }
+    
+    .bot__content {
+        flex-direction: column;
+    }
+
+    .bot__content-bot > button {
+        margin: 0;
+    }
 }

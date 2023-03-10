@@ -2,6 +2,9 @@ import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
 import ItemCount from "../ItemCount/ItemCount";
 import products from "../products/products";
+import { useContext } from "react";
+import cartContext from "../../Context/CartContext";
+import './styles.css';
 
 function getSingleItemFromDatabase(idItem) {
     return new Promise((resolve, reject) => {
@@ -19,34 +22,44 @@ function ItemDetailContainer() {
     const params = useParams();
     const idUser = params.idUser;
 
+    
     useEffect(() => {
         getSingleItemFromDatabase(idUser).then((respuesta) => {
             setUsers(respuesta);
         });
     }, [idUser]);
-
-
+    
+    
+    const { addItem } = useContext(cartContext);
+    
     function onAddToCart(count) {
         alert(`Agregaste ${count} items al carrito`);
+        addItem([user, count]);
+        
       }
 
     return (
-        <div className='producto container'>
-        <div className='producto__content'>
-                <div className='producto__content-img' key={user.id}>
-                    <img src={user.img} alt={user.title} />
-                    <div className='producto__content-title'>
-                        <h1>{user.title}</h1>
+        <div className='detail container'>
+        <div className='detail__content'>
+                <div className='detail__content-img' key={user.id}>
+                    
+                    <div className='img-movil'>
+                        <img src={user.img500} alt={user.title} />
                     </div>
-                    <h4>{user.description}</h4>
-                    <p>$ {user.price}</p>
-                    <p className='stock'>Stock Disponible: {user.stock}u</p>
+                    
+                    <div className='detail__content-title'>
+                        <h1>{user.title}</h1>
+                        <h4>{user.description}</h4>
+                        <p>$ {user.price}</p>
+                        <p className='stock'>Stock Disponible: {user.stock} Kg.</p>
                     
                         <ItemCount
                              onAddToCart={onAddToCart}
                              initial={1}
                              stock={user.stock}
                         />
+                    </div>
+                    
         
                 </div>
         </div>
