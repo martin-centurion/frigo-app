@@ -23,20 +23,20 @@ function NavBar() {
 
                     <nav ref={ navRef }>
                         <Link to="/">
-                            <button>Home</button>
+                            <button onClick={ showNavBar }>Home</button>
                         </Link>
                         <Link to="/category/ternera">
-                            <button>Ternera</button>
+                            <button onClick={ showNavBar }>Ternera</button>
                         </Link>
                         <Link to="/category/cerdo">
-                            <button>Cerdo</button>
+                            <button onClick={ showNavBar }>Cerdo</button>
                         </Link>
                         <Link to="/category/achura">
-                            <button>Achuras</button>
+                            <button onClick={ showNavBar }>Achuras</button>
                         </Link>
 
                         <Link to="/category/ave">
-                            <button>Ave</button>
+                            <button onClick={ showNavBar }>Ave</button>
                         </Link>
                             <CartWidget />
 
